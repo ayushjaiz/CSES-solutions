@@ -46,15 +46,9 @@ const int mod = 1e9 + 7;
 #define amin(a) *min_element(a, a + asize(a))
 #define vmax(a) *max_element(a.begin(), a.end())
 #define vmin(a) *min_element(a.begin(), a.end())
-#define vprint(v)          \
-    for (auto it : v)      \
-        cout << it << " "; \
-    cout << "\n"
-#define aprint(a)                      \
-    for (int i = 0; i < asize(a); i++) \
-        cout << a[i] << " ";           \
-    cout << "\n"
-//
+#define vprint(v) for (auto it : v) cout << it << " "
+#define aprint(a) for (int i = 0; i < asize(a); i++) cout << a[i] << " ";           \
+
 int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }
 int lcm(int a, int b) { return (a / gcd(a, b)) * b; }
 
@@ -62,11 +56,12 @@ void solve()
 {
     int n;
     cin >> n;
-    int a[n];
+    vector<int> a(n);
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
+    //--------> start here
 }
 int32_t main()
 {
